@@ -1,7 +1,9 @@
 spring:
+  application:
+    name: servicio-hoteles
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/viajes   
+    url: jdbc:mysql://localhost:3306/viajes?serverTimezone=UTC   
     username: root
     password: inem267
   jpa:
@@ -17,7 +19,6 @@ eureka:
     serviceUrl:
       # Direccion a la que se conecta el microservicio con eureka
       defaultZone: http://localhost:8761/eureka
-      
   
 
 
