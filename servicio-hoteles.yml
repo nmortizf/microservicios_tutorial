@@ -1,3 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/viajes?useSSL=false&serverTimezone=America/Bogota&allowPublicKeyRetrieval=true
+    username: root
+    password: inem267
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 server: 
   port: 8000
 # Config de el servidor  
@@ -6,20 +17,6 @@ eureka:
     serviceUrl:
       # Direccion a la que se conecta el microservicio con eureka
       defaultZone: http://localhost:8761/eureka
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: inem267
-    url: jdbc:mysql://localhost:3306/viajes?useSSL=false&serverTimezone=America/Bogota&allowPublicKeyRetrieval=true
-    username: root
-  jpa:
-    generate-ddl: false
-    hibernate:
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
-    show-sql: true
   
 
 
