@@ -6,7 +6,7 @@ server:
   port: 9000
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: inem267
+    password: root
     url: jdbc:mysql://localhost:3306/viajes?useSSL=false&serverTimezone=America/Bogota&allowPublicKeyRetrieval=true
     username: root
   jpa:
