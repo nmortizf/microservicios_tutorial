@@ -3,7 +3,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/viajes?serverTimezone=UTC   
     username: root
-    password: inem267
+    password: root
   jpa:
     hibernate:
       naming:
